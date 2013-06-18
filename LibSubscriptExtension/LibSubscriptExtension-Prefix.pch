@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'LibSubscriptExtension' target in the 'LibSubscriptExtension' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

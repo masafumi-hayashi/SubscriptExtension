@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F70AAE71760F6A200813A27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F70AAE61760F6A200813A27 /* UIKit.framework */; };
+		7F70AAE91760F6A200813A27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F70AAE81760F6A200813A27 /* Foundation.framework */; };
+		7F70AAEB1760F6A200813A27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F70AAEA1760F6A200813A27 /* CoreGraphics.framework */; };
+		7F70AAF11760F6A200813A27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F70AAEF1760F6A200813A27 /* InfoPlist.strings */; };
+		7F70AAF31760F6A200813A27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AAF21760F6A200813A27 /* main.m */; };
+		7F70AAF71760F6A200813A27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AAF61760F6A200813A27 /* AppDelegate.m */; };
+		7F70AAF91760F6A200813A27 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F70AAF81760F6A200813A27 /* Default.png */; };
+		7F70AAFB1760F6A200813A27 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F70AAFA1760F6A200813A27 /* Default@2x.png */; };
+		7F70AAFD1760F6A200813A27 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F70AAFC1760F6A200813A27 /* Default-568h@2x.png */; };
+		7F70AB051760F6A200813A27 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F70AB041760F6A200813A27 /* SenTestingKit.framework */; };
+		7F70AB061760F6A200813A27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F70AAE61760F6A200813A27 /* UIKit.framework */; };
+		7F70AB071760F6A200813A27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F70AAE81760F6A200813A27 /* Foundation.framework */; };
+		7F70AB0F1760F6A200813A27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F70AB0D1760F6A200813A27 /* InfoPlist.strings */; };
+		7F70AB121760F6A200813A27 /* SubscriptExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB111760F6A200813A27 /* SubscriptExtensionTests.m */; };
+		7F70AB461760F6F700813A27 /* NSArray+NSArraySubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB1C1760F6F700813A27 /* NSArray+NSArraySubscriptable.m */; };
+		7F70AB471760F6F700813A27 /* NSArray+NSMutableArraySubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB1E1760F6F700813A27 /* NSArray+NSMutableArraySubscriptable.m */; };
+		7F70AB481760F6F700813A27 /* NSArray+Subscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB201760F6F700813A27 /* NSArray+Subscript.m */; };
+		7F70AB491760F6F700813A27 /* NSMutableArray+Subscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB231760F6F700813A27 /* NSMutableArray+Subscript.m */; };
+		7F70AB4A1760F6F700813A27 /* NSMutableString+Subscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB261760F6F700813A27 /* NSMutableString+Subscript.m */; };
+		7F70AB4B1760F6F700813A27 /* NSNumber+NSArraySubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB291760F6F700813A27 /* NSNumber+NSArraySubscriptable.m */; };
+		7F70AB4C1760F6F700813A27 /* NSNumber+NSStringSubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB2B1760F6F700813A27 /* NSNumber+NSStringSubscriptable.m */; };
+		7F70AB4D1760F6F700813A27 /* NSPredicate+NSArraySubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB2D1760F6F700813A27 /* NSPredicate+NSArraySubscriptable.m */; };
+		7F70AB4E1760F6F700813A27 /* NSRegularExpression+NSMutableStringSubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB2F1760F6F700813A27 /* NSRegularExpression+NSMutableStringSubscriptable.m */; };
+		7F70AB4F1760F6F700813A27 /* NSRegularExpression+NSStringSubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB311760F6F700813A27 /* NSRegularExpression+NSStringSubscriptable.m */; };
+		7F70AB501760F6F700813A27 /* NSRegularExpression+SimpleInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB331760F6F700813A27 /* NSRegularExpression+SimpleInterface.m */; };
+		7F70AB511760F6F700813A27 /* NSString+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB351760F6F700813A27 /* NSString+Convert.m */; };
+		7F70AB521760F6F700813A27 /* NSString+Enumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB371760F6F700813A27 /* NSString+Enumerable.m */; };
+		7F70AB531760F6F700813A27 /* NSString+NSArraySubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB391760F6F700813A27 /* NSString+NSArraySubscriptable.m */; };
+		7F70AB541760F6F700813A27 /* NSString+NSMutableArraySubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB3B1760F6F700813A27 /* NSString+NSMutableArraySubscriptable.m */; };
+		7F70AB551760F6F700813A27 /* NSString+NSMutableStringSubscriable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB3D1760F6F700813A27 /* NSString+NSMutableStringSubscriable.m */; };
+		7F70AB561760F6F700813A27 /* NSString+NSStringSubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB3F1760F6F700813A27 /* NSString+NSStringSubscriptable.m */; };
+		7F70AB571760F6F700813A27 /* NSString+Subscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB411760F6F700813A27 /* NSString+Subscript.m */; };
+		7F70AB581760F6F700813A27 /* SubscriptParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB451760F6F700813A27 /* SubscriptParser.m */; };
+		7F70AB631760F71400813A27 /* NSArraySubscriptTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB5A1760F71400813A27 /* NSArraySubscriptTest.m */; };
+		7F70AB641760F71400813A27 /* NSMutableArraySubscriptTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB5C1760F71400813A27 /* NSMutableArraySubscriptTest.m */; };
+		7F70AB651760F71400813A27 /* NSMutableStringSubscriptTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB5E1760F71400813A27 /* NSMutableStringSubscriptTest.m */; };
+		7F70AB661760F71400813A27 /* NSStringConvertTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB601760F71400813A27 /* NSStringConvertTest.m */; };
+		7F70AB671760F71400813A27 /* NSStringSubScriptingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB621760F71400813A27 /* NSStringSubScriptingTest.m */; };
+		7FE8106417623C5F00FB21ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F70AAE81760F6A200813A27 /* Foundation.framework */; };
+		7FE8106917623C5F00FB21ED /* LibSubscriptExtension.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7FE8106817623C5F00FB21ED /* LibSubscriptExtension.h */; };
+		7FE8106B17623C5F00FB21ED /* LibSubscriptExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE8106A17623C5F00FB21ED /* LibSubscriptExtension.m */; };
+		7FE8106F17623C7B00FB21ED /* NSRegularExpression+SimpleInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB331760F6F700813A27 /* NSRegularExpression+SimpleInterface.m */; };
+		7FE8107017623C7B00FB21ED /* NSString+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB351760F6F700813A27 /* NSString+Convert.m */; };
+		7FE8107117623C7B00FB21ED /* NSString+Enumerable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB371760F6F700813A27 /* NSString+Enumerable.m */; };
+		7FE8107217623C7B00FB21ED /* NSArray+Subscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB201760F6F700813A27 /* NSArray+Subscript.m */; };
+		7FE8107317623C7B00FB21ED /* NSMutableArray+Subscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB231760F6F700813A27 /* NSMutableArray+Subscript.m */; };
+		7FE8107417623C7B00FB21ED /* NSMutableString+Subscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB261760F6F700813A27 /* NSMutableString+Subscript.m */; };
+		7FE8107517623C7B00FB21ED /* NSString+Subscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB411760F6F700813A27 /* NSString+Subscript.m */; };
+		7FE8107617623C7B00FB21ED /* NSArray+NSArraySubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB1C1760F6F700813A27 /* NSArray+NSArraySubscriptable.m */; };
+		7FE8107717623C7B00FB21ED /* NSNumber+NSArraySubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB291760F6F700813A27 /* NSNumber+NSArraySubscriptable.m */; };
+		7FE8107817623C7B00FB21ED /* NSPredicate+NSArraySubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB2D1760F6F700813A27 /* NSPredicate+NSArraySubscriptable.m */; };
+		7FE8107917623C7B00FB21ED /* NSString+NSArraySubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB391760F6F700813A27 /* NSString+NSArraySubscriptable.m */; };
+		7FE8107A17623C7B00FB21ED /* NSArray+NSMutableArraySubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB1E1760F6F700813A27 /* NSArray+NSMutableArraySubscriptable.m */; };
+		7FE8107B17623C7B00FB21ED /* NSString+NSMutableArraySubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB3B1760F6F700813A27 /* NSString+NSMutableArraySubscriptable.m */; };
+		7FE8107C17623C7B00FB21ED /* NSRegularExpression+NSMutableStringSubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB2F1760F6F700813A27 /* NSRegularExpression+NSMutableStringSubscriptable.m */; };
+		7FE8107D17623C7B00FB21ED /* NSString+NSMutableStringSubscriable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB3D1760F6F700813A27 /* NSString+NSMutableStringSubscriable.m */; };
+		7FE8107E17623C7B00FB21ED /* NSNumber+NSStringSubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB2B1760F6F700813A27 /* NSNumber+NSStringSubscriptable.m */; };
+		7FE8107F17623C7B00FB21ED /* NSRegularExpression+NSStringSubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB311760F6F700813A27 /* NSRegularExpression+NSStringSubscriptable.m */; };
+		7FE8108017623C7B00FB21ED /* NSString+NSStringSubscriptable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB3F1760F6F700813A27 /* NSString+NSStringSubscriptable.m */; };
+		7FE8108117623C7B00FB21ED /* SubscriptParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70AB451760F6F700813A27 /* SubscriptParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F70AB081760F6A200813A27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F70AADB1760F6A200813A27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F70AAE21760F6A200813A27;
+			remoteInfo = SubscriptExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7FE8106117623C5F00FB21ED /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				7FE8106917623C5F00FB21ED /* LibSubscriptExtension.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7F70AAE31760F6A200813A27 /* SubscriptExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubscriptExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F70AAE61760F6A200813A27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7F70AAE81760F6A200813A27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F70AAEA1760F6A200813A27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F70AAEE1760F6A200813A27 /* SubscriptExtension-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SubscriptExtension-Info.plist"; sourceTree = "<group>"; };
+		7F70AAF01760F6A200813A27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F70AAF21760F6A200813A27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F70AAF41760F6A200813A27 /* SubscriptExtension-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SubscriptExtension-Prefix.pch"; sourceTree = "<group>"; };
+		7F70AAF51760F6A200813A27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7F70AAF61760F6A200813A27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7F70AAF81760F6A200813A27 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7F70AAFA1760F6A200813A27 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7F70AAFC1760F6A200813A27 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7F70AB031760F6A200813A27 /* SubscriptExtensionTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubscriptExtensionTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F70AB041760F6A200813A27 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7F70AB0C1760F6A200813A27 /* SubscriptExtensionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SubscriptExtensionTests-Info.plist"; sourceTree = "<group>"; };
+		7F70AB0E1760F6A200813A27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F70AB101760F6A200813A27 /* SubscriptExtensionTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubscriptExtensionTests.h; sourceTree = "<group>"; };
+		7F70AB111760F6A200813A27 /* SubscriptExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubscriptExtensionTests.m; sourceTree = "<group>"; };
+		7F70AB1B1760F6F700813A27 /* NSArray+NSArraySubscriptable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NSArraySubscriptable.h"; sourceTree = "<group>"; };
+		7F70AB1C1760F6F700813A27 /* NSArray+NSArraySubscriptable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NSArraySubscriptable.m"; sourceTree = "<group>"; };
+		7F70AB1D1760F6F700813A27 /* NSArray+NSMutableArraySubscriptable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NSMutableArraySubscriptable.h"; sourceTree = "<group>"; };
+		7F70AB1E1760F6F700813A27 /* NSArray+NSMutableArraySubscriptable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NSMutableArraySubscriptable.m"; sourceTree = "<group>"; };
+		7F70AB1F1760F6F700813A27 /* NSArray+Subscript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Subscript.h"; sourceTree = "<group>"; };
+		7F70AB201760F6F700813A27 /* NSArray+Subscript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Subscript.m"; sourceTree = "<group>"; };
+		7F70AB211760F6F700813A27 /* NSArraySubscriptable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArraySubscriptable.h; sourceTree = "<group>"; };
+		7F70AB221760F6F700813A27 /* NSMutableArray+Subscript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Subscript.h"; sourceTree = "<group>"; };
+		7F70AB231760F6F700813A27 /* NSMutableArray+Subscript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Subscript.m"; sourceTree = "<group>"; };
+		7F70AB241760F6F700813A27 /* NSMutableArraySubscriptable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArraySubscriptable.h; sourceTree = "<group>"; };
+		7F70AB251760F6F700813A27 /* NSMutableString+Subscript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+Subscript.h"; sourceTree = "<group>"; };
+		7F70AB261760F6F700813A27 /* NSMutableString+Subscript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Subscript.m"; sourceTree = "<group>"; };
+		7F70AB271760F6F700813A27 /* NSMutableStringSubscriptable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableStringSubscriptable.h; sourceTree = "<group>"; };
+		7F70AB281760F6F700813A27 /* NSNumber+NSArraySubscriptable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+NSArraySubscriptable.h"; sourceTree = "<group>"; };
+		7F70AB291760F6F700813A27 /* NSNumber+NSArraySubscriptable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+NSArraySubscriptable.m"; sourceTree = "<group>"; };
+		7F70AB2A1760F6F700813A27 /* NSNumber+NSStringSubscriptable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+NSStringSubscriptable.h"; sourceTree = "<group>"; };
+		7F70AB2B1760F6F700813A27 /* NSNumber+NSStringSubscriptable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+NSStringSubscriptable.m"; sourceTree = "<group>"; };
+		7F70AB2C1760F6F700813A27 /* NSPredicate+NSArraySubscriptable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPredicate+NSArraySubscriptable.h"; sourceTree = "<group>"; };
+		7F70AB2D1760F6F700813A27 /* NSPredicate+NSArraySubscriptable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPredicate+NSArraySubscriptable.m"; sourceTree = "<group>"; };
+		7F70AB2E1760F6F700813A27 /* NSRegularExpression+NSMutableStringSubscriptable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+NSMutableStringSubscriptable.h"; sourceTree = "<group>"; };
+		7F70AB2F1760F6F700813A27 /* NSRegularExpression+NSMutableStringSubscriptable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRegularExpression+NSMutableStringSubscriptable.m"; sourceTree = "<group>"; };
+		7F70AB301760F6F700813A27 /* NSRegularExpression+NSStringSubscriptable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+NSStringSubscriptable.h"; sourceTree = "<group>"; };
+		7F70AB311760F6F700813A27 /* NSRegularExpression+NSStringSubscriptable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRegularExpression+NSStringSubscriptable.m"; sourceTree = "<group>"; };
+		7F70AB321760F6F700813A27 /* NSRegularExpression+SimpleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+SimpleInterface.h"; sourceTree = "<group>"; };
+		7F70AB331760F6F700813A27 /* NSRegularExpression+SimpleInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRegularExpression+SimpleInterface.m"; sourceTree = "<group>"; };
+		7F70AB341760F6F700813A27 /* NSString+Convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Convert.h"; sourceTree = "<group>"; };
+		7F70AB351760F6F700813A27 /* NSString+Convert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Convert.m"; sourceTree = "<group>"; };
+		7F70AB361760F6F700813A27 /* NSString+Enumerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Enumerable.h"; sourceTree = "<group>"; };
+		7F70AB371760F6F700813A27 /* NSString+Enumerable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Enumerable.m"; sourceTree = "<group>"; };
+		7F70AB381760F6F700813A27 /* NSString+NSArraySubscriptable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSArraySubscriptable.h"; sourceTree = "<group>"; };
+		7F70AB391760F6F700813A27 /* NSString+NSArraySubscriptable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSArraySubscriptable.m"; sourceTree = "<group>"; };
+		7F70AB3A1760F6F700813A27 /* NSString+NSMutableArraySubscriptable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSMutableArraySubscriptable.h"; sourceTree = "<group>"; };
+		7F70AB3B1760F6F700813A27 /* NSString+NSMutableArraySubscriptable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSMutableArraySubscriptable.m"; sourceTree = "<group>"; };
+		7F70AB3C1760F6F700813A27 /* NSString+NSMutableStringSubscriable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSMutableStringSubscriable.h"; sourceTree = "<group>"; };
+		7F70AB3D1760F6F700813A27 /* NSString+NSMutableStringSubscriable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSMutableStringSubscriable.m"; sourceTree = "<group>"; };
+		7F70AB3E1760F6F700813A27 /* NSString+NSStringSubscriptable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSStringSubscriptable.h"; sourceTree = "<group>"; };
+		7F70AB3F1760F6F700813A27 /* NSString+NSStringSubscriptable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSStringSubscriptable.m"; sourceTree = "<group>"; };
+		7F70AB401760F6F700813A27 /* NSString+Subscript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Subscript.h"; sourceTree = "<group>"; };
+		7F70AB411760F6F700813A27 /* NSString+Subscript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Subscript.m"; sourceTree = "<group>"; };
+		7F70AB421760F6F700813A27 /* NSStringSubscriptable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringSubscriptable.h; sourceTree = "<group>"; };
+		7F70AB431760F6F700813A27 /* SubscriptExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptExtension.h; sourceTree = "<group>"; };
+		7F70AB441760F6F700813A27 /* SubscriptParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptParser.h; sourceTree = "<group>"; };
+		7F70AB451760F6F700813A27 /* SubscriptParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptParser.m; sourceTree = "<group>"; };
+		7F70AB591760F71400813A27 /* NSArraySubscriptTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArraySubscriptTest.h; sourceTree = "<group>"; };
+		7F70AB5A1760F71400813A27 /* NSArraySubscriptTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArraySubscriptTest.m; sourceTree = "<group>"; };
+		7F70AB5B1760F71400813A27 /* NSMutableArraySubscriptTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArraySubscriptTest.h; sourceTree = "<group>"; };
+		7F70AB5C1760F71400813A27 /* NSMutableArraySubscriptTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArraySubscriptTest.m; sourceTree = "<group>"; };
+		7F70AB5D1760F71400813A27 /* NSMutableStringSubscriptTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableStringSubscriptTest.h; sourceTree = "<group>"; };
+		7F70AB5E1760F71400813A27 /* NSMutableStringSubscriptTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableStringSubscriptTest.m; sourceTree = "<group>"; };
+		7F70AB5F1760F71400813A27 /* NSStringConvertTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringConvertTest.h; sourceTree = "<group>"; };
+		7F70AB601760F71400813A27 /* NSStringConvertTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringConvertTest.m; sourceTree = "<group>"; };
+		7F70AB611760F71400813A27 /* NSStringSubScriptingTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringSubScriptingTest.h; sourceTree = "<group>"; };
+		7F70AB621760F71400813A27 /* NSStringSubScriptingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringSubScriptingTest.m; sourceTree = "<group>"; };
+		7FE8106317623C5F00FB21ED /* libLibSubscriptExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLibSubscriptExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE8106717623C5F00FB21ED /* LibSubscriptExtension-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LibSubscriptExtension-Prefix.pch"; sourceTree = "<group>"; };
+		7FE8106817623C5F00FB21ED /* LibSubscriptExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibSubscriptExtension.h; sourceTree = "<group>"; };
+		7FE8106A17623C5F00FB21ED /* LibSubscriptExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibSubscriptExtension.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F70AAE01760F6A200813A27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F70AAE71760F6A200813A27 /* UIKit.framework in Frameworks */,
+				7F70AAE91760F6A200813A27 /* Foundation.framework in Frameworks */,
+				7F70AAEB1760F6A200813A27 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F70AAFF1760F6A200813A27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F70AB051760F6A200813A27 /* SenTestingKit.framework in Frameworks */,
+				7F70AB061760F6A200813A27 /* UIKit.framework in Frameworks */,
+				7F70AB071760F6A200813A27 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FE8106017623C5F00FB21ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE8106417623C5F00FB21ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F70AADA1760F6A200813A27 = {
+			isa = PBXGroup;
+			children = (
+				7F70AAEC1760F6A200813A27 /* SubscriptExtension */,
+				7F70AB0A1760F6A200813A27 /* SubscriptExtensionTests */,
+				7FE8106517623C5F00FB21ED /* LibSubscriptExtension */,
+				7F70AAE51760F6A200813A27 /* Frameworks */,
+				7F70AAE41760F6A200813A27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F70AAE41760F6A200813A27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F70AAE31760F6A200813A27 /* SubscriptExtension.app */,
+				7F70AB031760F6A200813A27 /* SubscriptExtensionTests.octest */,
+				7FE8106317623C5F00FB21ED /* libLibSubscriptExtension.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F70AAE51760F6A200813A27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F70AAE61760F6A200813A27 /* UIKit.framework */,
+				7F70AAE81760F6A200813A27 /* Foundation.framework */,
+				7F70AAEA1760F6A200813A27 /* CoreGraphics.framework */,
+				7F70AB041760F6A200813A27 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F70AAEC1760F6A200813A27 /* SubscriptExtension */ = {
+			isa = PBXGroup;
+			children = (
+				7F70AB211760F6F700813A27 /* NSArraySubscriptable.h */,
+				7F70AB241760F6F700813A27 /* NSMutableArraySubscriptable.h */,
+				7F70AB271760F6F700813A27 /* NSMutableStringSubscriptable.h */,
+				7F70AB421760F6F700813A27 /* NSStringSubscriptable.h */,
+				7F70AB321760F6F700813A27 /* NSRegularExpression+SimpleInterface.h */,
+				7F70AB331760F6F700813A27 /* NSRegularExpression+SimpleInterface.m */,
+				7F70AB341760F6F700813A27 /* NSString+Convert.h */,
+				7F70AB351760F6F700813A27 /* NSString+Convert.m */,
+				7F70AB361760F6F700813A27 /* NSString+Enumerable.h */,
+				7F70AB371760F6F700813A27 /* NSString+Enumerable.m */,
+				7FEDF0C1176112CC00474445 /* Subscript */,
+				7FEDF0C01761126B00474445 /* NSArraySubscriptable */,
+				7FEDF0BE1761122C00474445 /* NSMutableArraySubscriptable */,
+				7FEDF0BD1761121A00474445 /* NSMutableStringSubscriptable */,
+				7FEDF0BF1761124D00474445 /* NSStringSubscriptable */,
+				7F70AB431760F6F700813A27 /* SubscriptExtension.h */,
+				7F70AB441760F6F700813A27 /* SubscriptParser.h */,
+				7F70AB451760F6F700813A27 /* SubscriptParser.m */,
+				7F70AAF51760F6A200813A27 /* AppDelegate.h */,
+				7F70AAF61760F6A200813A27 /* AppDelegate.m */,
+				7F70AAED1760F6A200813A27 /* Supporting Files */,
+			);
+			path = SubscriptExtension;
+			sourceTree = "<group>";
+		};
+		7F70AAED1760F6A200813A27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F70AAEE1760F6A200813A27 /* SubscriptExtension-Info.plist */,
+				7F70AAEF1760F6A200813A27 /* InfoPlist.strings */,
+				7F70AAF21760F6A200813A27 /* main.m */,
+				7F70AAF41760F6A200813A27 /* SubscriptExtension-Prefix.pch */,
+				7F70AAF81760F6A200813A27 /* Default.png */,
+				7F70AAFA1760F6A200813A27 /* Default@2x.png */,
+				7F70AAFC1760F6A200813A27 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F70AB0A1760F6A200813A27 /* SubscriptExtensionTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F70AB591760F71400813A27 /* NSArraySubscriptTest.h */,
+				7F70AB5A1760F71400813A27 /* NSArraySubscriptTest.m */,
+				7F70AB5B1760F71400813A27 /* NSMutableArraySubscriptTest.h */,
+				7F70AB5C1760F71400813A27 /* NSMutableArraySubscriptTest.m */,
+				7F70AB5D1760F71400813A27 /* NSMutableStringSubscriptTest.h */,
+				7F70AB5E1760F71400813A27 /* NSMutableStringSubscriptTest.m */,
+				7F70AB5F1760F71400813A27 /* NSStringConvertTest.h */,
+				7F70AB601760F71400813A27 /* NSStringConvertTest.m */,
+				7F70AB611760F71400813A27 /* NSStringSubScriptingTest.h */,
+				7F70AB621760F71400813A27 /* NSStringSubScriptingTest.m */,
+				7F70AB101760F6A200813A27 /* SubscriptExtensionTests.h */,
+				7F70AB111760F6A200813A27 /* SubscriptExtensionTests.m */,
+				7F70AB0B1760F6A200813A27 /* Supporting Files */,
+			);
+			path = SubscriptExtensionTests;
+			sourceTree = "<group>";
+		};
+		7F70AB0B1760F6A200813A27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F70AB0C1760F6A200813A27 /* SubscriptExtensionTests-Info.plist */,
+				7F70AB0D1760F6A200813A27 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FE8106517623C5F00FB21ED /* LibSubscriptExtension */ = {
+			isa = PBXGroup;
+			children = (
+				7FE8106817623C5F00FB21ED /* LibSubscriptExtension.h */,
+				7FE8106A17623C5F00FB21ED /* LibSubscriptExtension.m */,
+				7FE8106617623C5F00FB21ED /* Supporting Files */,
+			);
+			path = LibSubscriptExtension;
+			sourceTree = "<group>";
+		};
+		7FE8106617623C5F00FB21ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FE8106717623C5F00FB21ED /* LibSubscriptExtension-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FEDF0BD1761121A00474445 /* NSMutableStringSubscriptable */ = {
+			isa = PBXGroup;
+			children = (
+				7F70AB2E1760F6F700813A27 /* NSRegularExpression+NSMutableStringSubscriptable.h */,
+				7F70AB2F1760F6F700813A27 /* NSRegularExpression+NSMutableStringSubscriptable.m */,
+				7F70AB3C1760F6F700813A27 /* NSString+NSMutableStringSubscriable.h */,
+				7F70AB3D1760F6F700813A27 /* NSString+NSMutableStringSubscriable.m */,
+			);
+			name = NSMutableStringSubscriptable;
+			sourceTree = "<group>";
+		};
+		7FEDF0BE1761122C00474445 /* NSMutableArraySubscriptable */ = {
+			isa = PBXGroup;
+			children = (
+				7F70AB1D1760F6F700813A27 /* NSArray+NSMutableArraySubscriptable.h */,
+				7F70AB1E1760F6F700813A27 /* NSArray+NSMutableArraySubscriptable.m */,
+				7F70AB3A1760F6F700813A27 /* NSString+NSMutableArraySubscriptable.h */,
+				7F70AB3B1760F6F700813A27 /* NSString+NSMutableArraySubscriptable.m */,
+			);
+			name = NSMutableArraySubscriptable;
+			sourceTree = "<group>";
+		};
+		7FEDF0BF1761124D00474445 /* NSStringSubscriptable */ = {
+			isa = PBXGroup;
+			children = (
+				7F70AB2A1760F6F700813A27 /* NSNumber+NSStringSubscriptable.h */,
+				7F70AB2B1760F6F700813A27 /* NSNumber+NSStringSubscriptable.m */,
+				7F70AB301760F6F700813A27 /* NSRegularExpression+NSStringSubscriptable.h */,
+				7F70AB311760F6F700813A27 /* NSRegularExpression+NSStringSubscriptable.m */,
+				7F70AB3E1760F6F700813A27 /* NSString+NSStringSubscriptable.h */,
+				7F70AB3F1760F6F700813A27 /* NSString+NSStringSubscriptable.m */,
+			);
+			name = NSStringSubscriptable;
+			sourceTree = "<group>";
+		};
+		7FEDF0C01761126B00474445 /* NSArraySubscriptable */ = {
+			isa = PBXGroup;
+			children = (
+				7F70AB1B1760F6F700813A27 /* NSArray+NSArraySubscriptable.h */,
+				7F70AB1C1760F6F700813A27 /* NSArray+NSArraySubscriptable.m */,
+				7F70AB281760F6F700813A27 /* NSNumber+NSArraySubscriptable.h */,
+				7F70AB291760F6F700813A27 /* NSNumber+NSArraySubscriptable.m */,
+				7F70AB2C1760F6F700813A27 /* NSPredicate+NSArraySubscriptable.h */,
+				7F70AB2D1760F6F700813A27 /* NSPredicate+NSArraySubscriptable.m */,
+				7F70AB381760F6F700813A27 /* NSString+NSArraySubscriptable.h */,
+				7F70AB391760F6F700813A27 /* NSString+NSArraySubscriptable.m */,
+			);
+			name = NSArraySubscriptable;
+			sourceTree = "<group>";
+		};
+		7FEDF0C1176112CC00474445 /* Subscript */ = {
+			isa = PBXGroup;
+			children = (
+				7F70AB1F1760F6F700813A27 /* NSArray+Subscript.h */,
+				7F70AB201760F6F700813A27 /* NSArray+Subscript.m */,
+				7F70AB221760F6F700813A27 /* NSMutableArray+Subscript.h */,
+				7F70AB231760F6F700813A27 /* NSMutableArray+Subscript.m */,
+				7F70AB251760F6F700813A27 /* NSMutableString+Subscript.h */,
+				7F70AB261760F6F700813A27 /* NSMutableString+Subscript.m */,
+				7F70AB401760F6F700813A27 /* NSString+Subscript.h */,
+				7F70AB411760F6F700813A27 /* NSString+Subscript.m */,
+			);
+			name = Subscript;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F70AAE21760F6A200813A27 /* SubscriptExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F70AB151760F6A200813A27 /* Build configuration list for PBXNativeTarget "SubscriptExtension" */;
+			buildPhases = (
+				7F70AADF1760F6A200813A27 /* Sources */,
+				7F70AAE01760F6A200813A27 /* Frameworks */,
+				7F70AAE11760F6A200813A27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SubscriptExtension;
+			productName = SubscriptExtension;
+			productReference = 7F70AAE31760F6A200813A27 /* SubscriptExtension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F70AB021760F6A200813A27 /* SubscriptExtensionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F70AB181760F6A200813A27 /* Build configuration list for PBXNativeTarget "SubscriptExtensionTests" */;
+			buildPhases = (
+				7F70AAFE1760F6A200813A27 /* Sources */,
+				7F70AAFF1760F6A200813A27 /* Frameworks */,
+				7F70AB001760F6A200813A27 /* Resources */,
+				7F70AB011760F6A200813A27 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F70AB091760F6A200813A27 /* PBXTargetDependency */,
+			);
+			name = SubscriptExtensionTests;
+			productName = SubscriptExtensionTests;
+			productReference = 7F70AB031760F6A200813A27 /* SubscriptExtensionTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		7FE8106217623C5F00FB21ED /* LibSubscriptExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FE8106E17623C5F00FB21ED /* Build configuration list for PBXNativeTarget "LibSubscriptExtension" */;
+			buildPhases = (
+				7FE8105F17623C5F00FB21ED /* Sources */,
+				7FE8106017623C5F00FB21ED /* Frameworks */,
+				7FE8106117623C5F00FB21ED /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibSubscriptExtension;
+			productName = LibSubscriptExtension;
+			productReference = 7FE8106317623C5F00FB21ED /* libLibSubscriptExtension.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F70AADB1760F6A200813A27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "masafumi hayashi";
+			};
+			buildConfigurationList = 7F70AADE1760F6A200813A27 /* Build configuration list for PBXProject "SubscriptExtension" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7F70AADA1760F6A200813A27;
+			productRefGroup = 7F70AAE41760F6A200813A27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F70AAE21760F6A200813A27 /* SubscriptExtension */,
+				7F70AB021760F6A200813A27 /* SubscriptExtensionTests */,
+				7FE8106217623C5F00FB21ED /* LibSubscriptExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F70AAE11760F6A200813A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F70AAF11760F6A200813A27 /* InfoPlist.strings in Resources */,
+				7F70AAF91760F6A200813A27 /* Default.png in Resources */,
+				7F70AAFB1760F6A200813A27 /* Default@2x.png in Resources */,
+				7F70AAFD1760F6A200813A27 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F70AB001760F6A200813A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F70AB0F1760F6A200813A27 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F70AB011760F6A200813A27 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F70AADF1760F6A200813A27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F70AAF31760F6A200813A27 /* main.m in Sources */,
+				7F70AAF71760F6A200813A27 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F70AAFE1760F6A200813A27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F70AB121760F6A200813A27 /* SubscriptExtensionTests.m in Sources */,
+				7F70AB461760F6F700813A27 /* NSArray+NSArraySubscriptable.m in Sources */,
+				7F70AB471760F6F700813A27 /* NSArray+NSMutableArraySubscriptable.m in Sources */,
+				7F70AB481760F6F700813A27 /* NSArray+Subscript.m in Sources */,
+				7F70AB491760F6F700813A27 /* NSMutableArray+Subscript.m in Sources */,
+				7F70AB4A1760F6F700813A27 /* NSMutableString+Subscript.m in Sources */,
+				7F70AB4B1760F6F700813A27 /* NSNumber+NSArraySubscriptable.m in Sources */,
+				7F70AB4C1760F6F700813A27 /* NSNumber+NSStringSubscriptable.m in Sources */,
+				7F70AB4D1760F6F700813A27 /* NSPredicate+NSArraySubscriptable.m in Sources */,
+				7F70AB4E1760F6F700813A27 /* NSRegularExpression+NSMutableStringSubscriptable.m in Sources */,
+				7F70AB4F1760F6F700813A27 /* NSRegularExpression+NSStringSubscriptable.m in Sources */,
+				7F70AB501760F6F700813A27 /* NSRegularExpression+SimpleInterface.m in Sources */,
+				7F70AB511760F6F700813A27 /* NSString+Convert.m in Sources */,
+				7F70AB521760F6F700813A27 /* NSString+Enumerable.m in Sources */,
+				7F70AB531760F6F700813A27 /* NSString+NSArraySubscriptable.m in Sources */,
+				7F70AB541760F6F700813A27 /* NSString+NSMutableArraySubscriptable.m in Sources */,
+				7F70AB551760F6F700813A27 /* NSString+NSMutableStringSubscriable.m in Sources */,
+				7F70AB561760F6F700813A27 /* NSString+NSStringSubscriptable.m in Sources */,
+				7F70AB571760F6F700813A27 /* NSString+Subscript.m in Sources */,
+				7F70AB581760F6F700813A27 /* SubscriptParser.m in Sources */,
+				7F70AB631760F71400813A27 /* NSArraySubscriptTest.m in Sources */,
+				7F70AB641760F71400813A27 /* NSMutableArraySubscriptTest.m in Sources */,
+				7F70AB651760F71400813A27 /* NSMutableStringSubscriptTest.m in Sources */,
+				7F70AB661760F71400813A27 /* NSStringConvertTest.m in Sources */,
+				7F70AB671760F71400813A27 /* NSStringSubScriptingTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FE8105F17623C5F00FB21ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE8106B17623C5F00FB21ED /* LibSubscriptExtension.m in Sources */,
+				7FE8106F17623C7B00FB21ED /* NSRegularExpression+SimpleInterface.m in Sources */,
+				7FE8107017623C7B00FB21ED /* NSString+Convert.m in Sources */,
+				7FE8107117623C7B00FB21ED /* NSString+Enumerable.m in Sources */,
+				7FE8107217623C7B00FB21ED /* NSArray+Subscript.m in Sources */,
+				7FE8107317623C7B00FB21ED /* NSMutableArray+Subscript.m in Sources */,
+				7FE8107417623C7B00FB21ED /* NSMutableString+Subscript.m in Sources */,
+				7FE8107517623C7B00FB21ED /* NSString+Subscript.m in Sources */,
+				7FE8107617623C7B00FB21ED /* NSArray+NSArraySubscriptable.m in Sources */,
+				7FE8107717623C7B00FB21ED /* NSNumber+NSArraySubscriptable.m in Sources */,
+				7FE8107817623C7B00FB21ED /* NSPredicate+NSArraySubscriptable.m in Sources */,
+				7FE8107917623C7B00FB21ED /* NSString+NSArraySubscriptable.m in Sources */,
+				7FE8107A17623C7B00FB21ED /* NSArray+NSMutableArraySubscriptable.m in Sources */,
+				7FE8107B17623C7B00FB21ED /* NSString+NSMutableArraySubscriptable.m in Sources */,
+				7FE8107C17623C7B00FB21ED /* NSRegularExpression+NSMutableStringSubscriptable.m in Sources */,
+				7FE8107D17623C7B00FB21ED /* NSString+NSMutableStringSubscriable.m in Sources */,
+				7FE8107E17623C7B00FB21ED /* NSNumber+NSStringSubscriptable.m in Sources */,
+				7FE8107F17623C7B00FB21ED /* NSRegularExpression+NSStringSubscriptable.m in Sources */,
+				7FE8108017623C7B00FB21ED /* NSString+NSStringSubscriptable.m in Sources */,
+				7FE8108117623C7B00FB21ED /* SubscriptParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F70AB091760F6A200813A27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F70AAE21760F6A200813A27 /* SubscriptExtension */;
+			targetProxy = 7F70AB081760F6A200813A27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F70AAEF1760F6A200813A27 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F70AAF01760F6A200813A27 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7F70AB0D1760F6A200813A27 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F70AB0E1760F6A200813A27 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F70AB131760F6A200813A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7F70AB141760F6A200813A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F70AB161760F6A200813A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SubscriptExtension/SubscriptExtension-Prefix.pch";
+				INFOPLIST_FILE = "SubscriptExtension/SubscriptExtension-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7F70AB171760F6A200813A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SubscriptExtension/SubscriptExtension-Prefix.pch";
+				INFOPLIST_FILE = "SubscriptExtension/SubscriptExtension-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7F70AB191760F6A200813A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SubscriptExtension.app/SubscriptExtension";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SubscriptExtension/SubscriptExtension-Prefix.pch";
+				INFOPLIST_FILE = "SubscriptExtensionTests/SubscriptExtensionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7F70AB1A1760F6A200813A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SubscriptExtension.app/SubscriptExtension";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SubscriptExtension/SubscriptExtension-Prefix.pch";
+				INFOPLIST_FILE = "SubscriptExtensionTests/SubscriptExtensionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		7FE8106C17623C5F00FB21ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/LibSubscriptExtension.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LibSubscriptExtension/LibSubscriptExtension-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7FE8106D17623C5F00FB21ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/LibSubscriptExtension.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LibSubscriptExtension/LibSubscriptExtension-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F70AADE1760F6A200813A27 /* Build configuration list for PBXProject "SubscriptExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F70AB131760F6A200813A27 /* Debug */,
+				7F70AB141760F6A200813A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F70AB151760F6A200813A27 /* Build configuration list for PBXNativeTarget "SubscriptExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F70AB161760F6A200813A27 /* Debug */,
+				7F70AB171760F6A200813A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F70AB181760F6A200813A27 /* Build configuration list for PBXNativeTarget "SubscriptExtensionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F70AB191760F6A200813A27 /* Debug */,
+				7F70AB1A1760F6A200813A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FE8106E17623C5F00FB21ED /* Build configuration list for PBXNativeTarget "LibSubscriptExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FE8106C17623C5F00FB21ED /* Debug */,
+				7FE8106D17623C5F00FB21ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F70AADB1760F6A200813A27 /* Project object */;
+}
