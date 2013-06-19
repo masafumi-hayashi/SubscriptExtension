@@ -1,7 +1,10 @@
 SubscriptExtension
 ==================
 
-Objective-CにRubyのような添字を指定できるようにする拡張。
+Objective-Cの添字の指定を拡張するライブラリ。
+
+* Rubyの添字記述のような拡張。
+* Cocoa Frameworkのクラスを使った拡張。
 
 今後の予定
 ------------------
