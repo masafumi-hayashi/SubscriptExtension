@@ -33,6 +33,7 @@
     STAssertEqualObjects(@"hello world"[1], @"e", nil);
     STAssertEqualObjects(@"hello world"[10], @"d", nil);
     STAssertEqualObjects(@"hello world"[11], nil, nil);
+    STAssertEqualObjects(@"こんにちは"[0], @"こ", nil);
 }
 
 - (void)testNegativeIntegerAccess
@@ -42,6 +43,7 @@
     STAssertEqualObjects(@"hello world"[-1], @"d", nil);
     STAssertEqualObjects(@"hello world"[-11], @"h", nil);
     STAssertEqualObjects(@"hello world"[-12], nil, nil);
+    STAssertEqualObjects(@"こんにちは"[-1], @"は", nil);
 }
 
 - (void)testLocationAndLengthStringAccess
